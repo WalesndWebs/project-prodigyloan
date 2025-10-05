@@ -136,7 +136,7 @@ export function Layout() {
                   <div className="flex h-full flex-col">
                     <div className="border-b p-6">
                       <div className="flex items-center gap-3">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2Fc5oCqVpf7jMz7S2yGjhOWEN5tiQ2%2Flogo-removebg-preview__7d62ffb1.png?alt=media&token=826babad-c568-409b-abe5-280c08183874" alt="Prodigy Group Services" className="h-8 w-auto" />
+                        <img src="/favicon.svg" alt="Prodigy Group Services" className="h-8 w-auto" />
                         <h2 className="text-xl font-bold text-primary">Prodigy Group Services</h2>
                       </div>
                       {profile && (
@@ -163,7 +163,7 @@ export function Layout() {
               </Sheet>
             )}
             <Link to="/" className="flex items-center gap-2">
-              <img src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2Fc5oCqVpf7jMz7S2yGjhOWEN5tiQ2%2Flogo-removebg-preview__7d62ffb1.png?alt=media&token=826babad-c568-409b-abe5-280c08183874" alt="Prodigy Group Services" className="h-8 w-auto" />
+              <img src="/favicon.svg" alt="Prodigy Group Services" className="h-8 w-auto" />
               <span className="text-xl font-bold">Prodigy Group Services</span>
             </Link>
           </div>

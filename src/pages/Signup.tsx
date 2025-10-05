@@ -69,7 +69,7 @@ export function Signup() {
       <Card className="w-full max-w-md border-2 border-gray-200 dark:border-gray-700 shadow-xl">
         <CardHeader className="text-center pb-6">
           <div className="flex justify-center mb-6">
-            <img src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2Fc5oCqVpf7jMz7S2yGjhOWEN5tiQ2%2Flogo-removebg-preview__7d62ffb1.png?alt=media&token=826babad-c568-409b-abe5-280c08183874" alt="Prodigy Group Services" className="h-16 w-16 object-contain rounded-xl shadow-sm bg-white p-1" />
+            <img src="/favicon.svg" alt="Prodigy Group Services" className="h-16 w-16 object-contain rounded-xl shadow-sm bg-white p-1" />
           </div>
           <CardTitle className="text-3xl font-bold text-gray-900 dark:text-white">Create Account</CardTitle>
           <CardDescription className="text-base mt-2 text-gray-600 dark:text-gray-400">Join Prodigy Group Services today</CardDescription>
