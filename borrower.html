@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Borrower Dashboard — Prodigy</title>
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body data-page="borrower" class="min-h-screen bg-background text-foreground">
+    <header class="sticky top-0 z-40 w-full border-b bg-white/80 backdrop-blur">
+      <div class="mx-auto max-w-7xl px-4 h-16 flex items-center justify-between">
+        <a href="/landing.html" class="flex items-center gap-2 font-bold text-xl tracking-tight text-primary"><img src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2Fc5oCqVpf7jMz7S2yGjhOWEN5tiQ2%2Flogo-removebg-preview__7d62ffb1.png?alt=media&token=826babad-c568-409b-abe5-280c08183874" alt="Prodigy Group Services" class="h-8 w-auto"/><span>Prodigy Group Services</span></a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="/transactions.html" class="hover:text-primary">Transactions</a>
+          <button id="navLogout" class="inline-flex items-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-800">Logout</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-4 py-10 space-y-8">
+      <h1 class="text-3xl font-bold">Borrower Dashboard</h1>
+      <section class="grid md:grid-cols-3 gap-6">
+        <div class="rounded-xl border bg-white p-6 shadow-sm">
+          <h2 class="font-semibold mb-2">Apply for a Loan</h2>
+          <p class="text-sm text-gray-600 mb-4">View products and submit an application.</p>
+          <a href="#" class="inline-flex items-center rounded-md bg-primary px-4 py-2 text-white hover:bg-primary/90">Explore Loans</a>
+        </div>
+        <div class="rounded-xl border bg-white p-6 shadow-sm">
+          <h2 class="font-semibold mb-2">Status</h2>
+          <p class="text-sm text-gray-600">Track your loan application progress.</p>
+        </div>
+        <div class="rounded-xl border bg-white p-6 shadow-sm">
+          <h2 class="font-semibold mb-2">Repayment History</h2>
+          <p class="text-sm text-gray-600">See your past repayments.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-4">Your Loan Applications</h2>
+        <div class="overflow-x-auto rounded-xl border bg-white">
+          <table class="w-full text-sm">
+            <thead class="bg-gray-50">
+              <tr>
+                <th class="px-4 py-2 text-left">Product</th>
+                <th class="px-4 py-2 text-left">Amount</th>
+                <th class="px-4 py-2 text-left">Status</th>
+                <th class="px-4 py-2 text-left">Created</th>
+              </tr>
+            </thead>
+            <tbody id="loanList"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/static/app.js"></script>
+  </body>
+</html>

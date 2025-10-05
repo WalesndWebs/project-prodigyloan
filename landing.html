@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Prodigy Group Services — Financial Excellence</title>
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body data-page="landing" class="min-h-screen bg-background text-foreground">
+    <header class="sticky top-0 z-40 w-full border-b bg-white/80 backdrop-blur dark:bg-gray-900/60">
+      <div class="mx-auto max-w-7xl px-4 h-16 flex items-center justify-between">
+        <a href="/landing.html" class="flex items-center gap-2 font-bold text-xl tracking-tight text-primary"><img src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2Fc5oCqVpf7jMz7S2yGjhOWEN5tiQ2%2Flogo-removebg-preview__7d62ffb1.png?alt=media&token=826babad-c568-409b-abe5-280c08183874" alt="Prodigy Group Services" class="h-8 w-auto"/><span>Prodigy Group Services</span></a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="/landing.html" class="hover:text-primary">Home</a>
+          <a href="/transactions.html" class="hover:text-primary">Transactions</a>
+          <a href="/login.html" id="navLogin" class="inline-flex items-center rounded-md border px-4 py-2 text-sm font-medium hover:bg-primary/10 border-primary text-primary">Login</a>
+          <a href="/signup.html" id="navSignup" class="inline-flex items-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary/90">Sign Up</a>
+          <button id="navLogout" class="hidden inline-flex items-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-800">Logout</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 py-24 px-4">
+        <div class="mx-auto max-w-6xl text-center">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">Your Gateway to</h1>
+          <h2 class="text-4xl md:text-6xl font-bold mb-8 text-primary">Financial Excellence</h2>
+          <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-3xl mx-auto">
+            Access premium loan and investment products tailored to your financial goals.
+          </p>
+          <div class="flex flex-wrap gap-4 justify-center">
+            <a href="/signup.html" class="inline-flex items-center rounded-lg bg-primary px-6 py-3 text-white hover:bg-primary/90">Get Started</a>
+            <a href="/login.html" class="inline-flex items-center rounded-lg border-2 border-primary px-6 py-3 text-primary hover:bg-primary/10">Admin Login</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="py-20 px-4 bg-white dark:bg-gray-800">
+        <div class="mx-auto max-w-6xl grid md:grid-cols-4 gap-6">
+          <div class="border rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-semibold mb-2">Smart Investments</h3>
+            <p class="text-sm text-gray-600">Tailored strategies for maximum returns.</p>
+          </div>
+          <div class="border rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-semibold mb-2">Secure Platform</h3>
+            <p class="text-sm text-gray-600">Bank‑level security for your data.</p>
+          </div>
+          <div class="border rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-semibold mb-2">Expert Advisory</h3>
+            <p class="text-sm text-gray-600">Guidance from financial experts.</p>
+          </div>
+          <div class="border rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-semibold mb-2">Fast Processing</h3>
+            <p class="text-sm text-gray-600">Quick approvals and access.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="py-20 px-4 bg-gradient-to-br from-blue-600 to-blue-800">
+        <div class="mx-auto max-w-4xl text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Ready to Get Started?</h2>
+          <p class="text-blue-100 mb-8">Join thousands of satisfied customers today.</p>
+          <a href="/signup.html" class="inline-flex items-center rounded-lg bg-white px-6 py-3 text-primary hover:bg-gray-100">Create Free Account</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-6 text-center text-sm text-gray-500">
+      © <span id="year"></span> Prodigy Group Services
+    </footer>
+
+    <script type="module" src="/src/static/app.js"></script>
+  </body>
+</html>

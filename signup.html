@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Sign Up — Prodigy Group Services</title>
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body data-page="signup" class="min-h-screen bg-background text-foreground">
+    <header class="sticky top-0 z-40 w-full border-b bg-white/80 backdrop-blur">
+      <div class="mx-auto max-w-7xl px-4 h-16 flex items-center justify-between">
+        <a href="/landing.html" class="flex items-center gap-2 font-bold text-xl tracking-tight text-blue-600"><img src="https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2Fc5oCqVpf7jMz7S2yGjhOWEN5tiQ2%2Flogo-removebg-preview__7d62ffb1.png?alt=media&token=826babad-c568-409b-abe5-280c08183874" alt="Prodigy Group Services" class="h-8 w-auto"/><span>Prodigy Group Services</span></a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="/landing.html" class="hover:text-primary">Home</a>
+          <a href="/login.html" class="hover:text-primary">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-md px-4 py-12">
+      <div class="bg-white dark:bg-gray-900 rounded-xl shadow-md border p-8">
+        <h1 class="text-2xl font-bold mb-2">Create account</h1>
+        <p class="text-gray-600 mb-6">Join as a borrower or investor</p>
+        <form id="signupForm" class="space-y-4">
+          <div>
+            <label class="block text-sm mb-1" for="fullName">Full name</label>
+            <input id="fullName" type="text" class="w-full rounded-md border px-3 py-2" placeholder="Jane Doe" />
+          </div>
+          <div>
+            <label class="block text-sm mb-1" for="email">Email</label>
+            <input id="email" type="email" required class="w-full rounded-md border px-3 py-2" placeholder="you@example.com" />
+          </div>
+          <div>
+            <label class="block text-sm mb-1" for="password">Password</label>
+            <input id="password" type="password" required class="w-full rounded-md border px-3 py-2" placeholder="••••••••" />
+          </div>
+          <div>
+            <label class="block text-sm mb-1" for="role">Role</label>
+            <select id="role" class="w-full rounded-md border px-3 py-2">
+              <option value="borrower">Borrower</option>
+              <option value="investor">Investor</option>
+            </select>
+          </div>
+          <button type="submit" class="w-full rounded-md bg-primary py-2.5 text-white hover:bg-primary/90">Create Account</button>
+          <p id="signupError" class="hidden text-sm text-red-600"></p>
+        </form>
+        <p class="text-sm text-gray-600 mt-6">Already have an account? <a class="text-blue-600 hover:underline" href="/login.html">Login</a></p>
+      </div>
+    </main>
+
+    <script type="module" src="/src/static/app.js"></script>
+  </body>
+</html>
